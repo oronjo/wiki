@@ -1,3 +1,30 @@
+body {
+  padding-top: 50px;
+  padding-bottom:40px;
+}
+
 .navbar-brand-logo {
   height: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .imageWidth {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .imageWidth {
+    max-width: 750px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .imageWidth {
+    max-width: 970px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .imageWidth {
+    max-width: 1170px;
+  }
 }

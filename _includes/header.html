@@ -2,14 +2,16 @@
     <div class="container">
 
       <div class="navbar-header">
-        <a href="#" class="navbar-brand">
+        <a href="/index.html" class="navbar-brand">
           <img src="images/oronjo_white.png" class="navbar-brand-logo" title="Oronjo" alt="Oronjo">
         </a>
-        <a href="#" class="navbar-brand">Oronjo</a>
+        <a href="/index.html" class="navbar-brand">Oronjo Wiki</a>
 
 
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-          <i class="fa fa-bars"></i>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
       </div>
 
@@ -17,9 +19,14 @@
       <div class="navbar-collapse collapse" id="navbar-main">
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{pathFor 'faq'}}">FAQs</a></li>
 
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Entries <span class="caret"></span></a>
 
+            <ul class="dropdown-menu" role="menu">
+              {% include entries.html %}    
+            </ul>
+          </li>
         </ul>
 
       </div>

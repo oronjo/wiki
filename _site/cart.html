@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Oronjo Wiki > Add a SoundCloud Clip</title>
+    <title>Oronjo Wiki > Add a cart to your pages</title>
 
     <!-- Bootstrap -->
     <link href="css/cerulean.min.css" rel="stylesheet">
@@ -64,33 +64,43 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h1 id="add-a-soundcloud-clip">Add a SoundCloud Clip</h1>
+          <h1 id="html">HTML</h1>
 
-<p>If you want to add a SoundCloud clip to your product, you need to find the ‘embed’ ID of the clip. How can you find this ID?</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Oronjo Cart Example<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;body&gt;</span>
 
-<h2 id="click-on-the-share-button-of-the-clip">Click on the share button of the clip</h2>
 
-<p><img src="images/soundcloud_id.png" alt="soundcloud ID" class="imageWidth" /></p>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;OWAddToCart&quot;</span><span class="nt">&gt;</span>Add to cart<span class="nt">&lt;/a&gt;</span>
 
-<h2 id="click-on-embed">Click on ‘Embed’</h2>
+<span class="c">&lt;!-- Link to open the modal --&gt;</span>
+<span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#cart&quot;</span> <span class="na">class=</span><span class="s">&quot;OWOpenCart&quot;</span>  <span class="na">rel=</span><span class="s">&quot;modal:open&quot;</span><span class="nt">&gt;</span>Cart<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
 
-<p><img src="images/soundcloud_id_embed_01.png" alt="soundcloud ID" class="imageWidth" /></p>
 
-<h2 id="copy-the-html-code">Copy the HTML code</h2>
+<span class="c">&lt;!-- Modal HTML embedded directly into document --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;cart&quot;</span> <span class="na">style=</span><span class="s">&quot;display:none;&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Thanks for clicking.  That felt good.  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">rel=</span><span class="s">&quot;modal:close&quot;</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/a&gt;</span> or press ESC<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+    
 
-<p><img src="images/soundcloud_id_embed_02.png" alt="soundcloud ID" class="imageWidth" /></p>
 
-<h2 id="edit-your-product">Edit your product</h2>
 
-<p>Paste the HTML code into the media field. Oronjo will determine the media type and ID once you hit update.  </p>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
-<h3 id="media-field-with-html-code">Media field with HTML code</h3>
+<h1 id="output">Output</h1>
 
-<p><img src="images/soundcloud_id_product_code.png" alt="soundcloud code on product" class="imageWidth" /></p>
+<p><a href="#" class="OWAddToCart">Add to cart</a></p>
 
-<h3 id="media-field-after-update">Media field after update</h3>
+<!-- Link to open the modal -->
+<p><a href="#cart" class="OWOpenCart" rel="modal:open">Cart</a></p>
 
-<p><img src="images/soundcloud_id_product_id.png" alt="soundcloud id on product" class="imageWidth" /></p>
+<!-- Modal HTML embedded directly into document -->
+<div id="cart" style="display:none;">
+  <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
+</div>
+
    
         </div>
       </div>

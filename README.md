@@ -16,8 +16,3 @@ Run it locally using this command:
 # Github URL
 
 [http://oronjo.github.io/wiki/](http://oronjo.github.io/wiki/)
-
-
-# Run locally
-
-bundle exec jekyll serve
